@@ -43,18 +43,45 @@ module.exports = app => {
     };
     var userData = req.body;
     var userScores = userData.scores;
+    // global variables for us to be able to access at a later time (scope!)
     console.log(userData);
     console.log(userScores);
     console.log(friendMatch);
 
     var i;
     for (i = 0; i < friends.length; i++) {
+      // will end up being a loop within a loop
+        // outer loop  loops the entire friends.js
+
+      var currentFriend = friends[i];
+      var differenceScore = 0;
+
+      console.log(currentFriend);
+      console.log(differenceScore);
+        // inner loop loops through and compare the scores
+        var j;
+          for (j = 0; j < currentFriend.scores.length; j++) {
+            var currentFriendScore = currentFriend.scores[j];
+            var currentUserScore = userScores[j];
+
+            console.log(currentFriendScore);
+            console.log(currentUserScore);
+
+            differenceScore += Math.abs( parseInt(currentFriendScore) -  parseInt(currentUserScore));
+          // perfect example of asynchronous coding; looping through an array while looping through another array defined by global variables outside of each
+            console.log(differenceScore);
+
       
+
     
     }
 
 
   }
+})
+
+
+
 
 
 
