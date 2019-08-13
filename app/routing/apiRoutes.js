@@ -22,7 +22,7 @@ module.exports = app => {
   app.get("/api/friends", ((req, res) => {
     res.json(friends);
   }));
-  
+
 
 
   // API POST Requests
@@ -33,26 +33,46 @@ module.exports = app => {
   // Then the server saves the data to the tableData array)
   // ---------------------------------------------------------------------------
 
-//   app.post("/api/tables", ((req, res) => {
-    // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-    // It will do this by sending out the value "true" have a table
-    // req.body is available since we're using the body parsing middleware
-//     if (!(tableData.length < 5)) {
-//       waitListData.push(req.body);
-//       return res.json(false);
-//     }
-//     tableData.push(req.body);
-//     res.json(true);
-//   }));
+  app.post("/api/friends", ((req, res) => {
+    var friendMatch = {
+      name: "",
+      photo: "",
+      absoluteDifference: Infinity
+      //infinity will return any type of number 
 
-  // ---------------------------------------------------------------------------
-  // I added this below code so you could clear out the table while working with the functionality.
-  // Don"t worry about it!
+    };
+    var userData = req.body;
+    var userScores = userData.scores;
+    console.log(userData);
+    console.log(userScores);
+    console.log(friendMatch);
 
-//   app.post("/api/clear", ((req, res) => {
-    // Empty out the arrays of data
-//     tableData.length = 0;
-//     waitListData.length = 0;
-//     res.json({ ok: true });
-//   }));
-};
+    var i;
+    for (i = 0; i < friends.length; i++) {
+      
+    
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+// receive the value of the survey called userData; 
+      // going to need a few global variables - 
+          // 1. to hold on to friend that surveyor matches (var = friendMatch = friendmatchname + friendmatchphoto + the absolute value score)
+
+
+
+
+// have to compare userData scores to friendScores out of friends.js
+// have to calculate the absolute difference between the scores
+// then push user data to the friends.js
+// then return the best match to appear in the modal on the survey.html
+
+
