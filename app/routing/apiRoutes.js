@@ -51,55 +51,72 @@ module.exports = app => {
     var i;
     for (i = 0; i < friends.length; i++) {
       // will end up being a loop within a loop
-        // outer loop  loops the entire friends.js
+      // outer loop  loops the entire friends.js
 
       var currentFriend = friends[i];
       var differenceScore = 0;
 
       console.log(currentFriend);
       console.log(differenceScore);
-        // inner loop loops through and compare the scores
-        var j;
-          for (j = 0; j < currentFriend.scores.length; j++) {
-            var currentFriendScore = currentFriend.scores[j];
-            var currentUserScore = userScores[j];
+      // inner loop loops through and compare the scores
+      var j;
+      for (j = 0; j < currentFriend.scores.length; j++) {
+        var currentFriendScore = currentFriend.scores[j];
+        var currentUserScore = userScores[j];
 
-            console.log(currentFriendScore);
-            console.log(currentUserScore);
+        console.log(currentFriendScore);
+        console.log(currentUserScore);
 
-            differenceScore += Math.abs( parseInt(currentFriendScore) -  parseInt(currentUserScore));
-          // perfect example of asynchronous coding; looping through an array while looping through another array defined by global variables outside of each
-            console.log(differenceScore);
+        differenceScore += Math.abs(parseInt(currentFriendScore) - parseInt(currentUserScore));
+        // perfect example of asynchronous coding; looping through an array while looping through another array defined by global variables outside of each
+        console.log(differenceScore);
 
-      
+        // receive the value of the survey called userData; 
+        // going to need a few global variables - 
+        // 1. to hold on to friend that surveyor matches (var = friendMatch = friendmatchname + friendmatchphoto + the absolute value score)
 
-    
+        if (differenceScore <= friendMatch.absoluteDifference){
+          friendMatch.name = currentFriend.name;
+          friendMatch.photo = currentFriend.photo;
+          friendMatch.absoluteDifference = differenceScore;
+        }
+
+
+        
+
+
+        // have to compare userData scores to friendScores out of friends.js
+        // have to calculate the absolute difference between the scores
+        // then push user data to the friends.js
+        // then return the best match to appear in the modal on the survey.html
+
+
+        // if statemensts inside post (comparison total differnece between )
+
+
+      }
+
+
     }
 
-
-  }
-})
-
+    friends.push(userData);
+    res.json(friendMatch);
 
 
 
 
+    
+  }))
+};
 
 
 
 
 
 
-// receive the value of the survey called userData; 
-      // going to need a few global variables - 
-          // 1. to hold on to friend that surveyor matches (var = friendMatch = friendmatchname + friendmatchphoto + the absolute value score)
 
 
 
 
-// have to compare userData scores to friendScores out of friends.js
-// have to calculate the absolute difference between the scores
-// then push user data to the friends.js
-// then return the best match to appear in the modal on the survey.html
 
 
