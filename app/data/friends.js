@@ -1,6 +1,102 @@
 var friends = [{
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name":"Brian",
+    "photo":"https://scontent.fphl2-3.fna.fbcdn.net/v/t1.0-9/48360016_10155809729651120_8552332161913454592_n.jpg?_nc_cat=109&_nc_oc=AQlkcerT3YHMyRVh4WDeVPCc8bqxkrlYfN82rssLMaLrueUgwpsNfoWSNL3mxkeuR5k&_nc_ht=scontent.fphl2-3.fna&oh=483a54c8462140509564c61f6eec7e37&oe=5DDE17B7",
+    "scores":[
+        2,
+        4,
+        1,
+        4,
+        5,
+        3,
+        2,
+        1,
+        2,
+        3
+      ]
+  },
+  {
+    "name":"Ronessa",
+    "photo":"https://scontent.fphl2-3.fna.fbcdn.net/v/t31.0-8/10468236_10204820213207409_6691686714712590756_o.jpg?_nc_cat=101&_nc_oc=AQlQpgAN24F3U1d5M1KtaHXS4CfHvjB4ft4VsnIHhuOwA4z4AHSASZ2MJd19OYR18fg&_nc_ht=scontent.fphl2-3.fna&oh=2a8eabc8821297bab18f4483ce43bc31&oe=5DD10765",
+    "scores":[
+        4,
+        5,
+        4,
+        3,
+        2,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+  },
+  {
+    "name":"Aaron",
+    "photo":"https://media-exp1.licdn.com/media-proxy/ext?w=378&h=378&f=n&hash=rbgHsl3DphDXxxPe5ap7zqInh%2F0%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6nlh8Tw1It6a2FowGz60oISIfYC2G8G2f1spyfNT-tdoDSerWpsgUbeysJhlI_IfnwEXO5H9S1dPn6f64VwdWkTOOSThUUPh45qG1j-P4UCFx2k6HjVs-2bzxPj70dPwy8FZvKU2o7ARc67culf4vOGGg3-2a9CIrCAe1zSrY398wK8QhHr__KO90pnJV5zUtO2HipqOHPAAs65JOEKniBOH5mLjXWK-pyjraVgAKmmlPZmGbat6nEN6-APYc6-1ax4dzWYzO3uQ",
+    "scores":[
+        5,
+        4,
+        3,
+        2,
+        1,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+  },
+  {
+    "name":"Collin",
+    "photo":"https://scontent.fphl2-2.fna.fbcdn.net/v/t1.0-9/1010729_10151644135160270_1894624370_n.jpg?_nc_cat=102&_nc_oc=AQlUuJY83cNmjvbGrBovuzmg6TNA9yE3drwZFkRmwvRkjJlzLszrZVsEa9nMTP-TuXo&_nc_ht=scontent.fphl2-2.fna&oh=69977c0f4555552a9e687cb6c7e7b018&oe=5E11845A",
+    "scores":[
+        1,
+        2,
+        3,
+        4,
+        5,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+  },
+  {
+    "name":"Chris",
+    "photo":"https://scontent.fphl2-4.fna.fbcdn.net/v/t1.0-1/12250058_10156317034475578_39744475551414139_n.jpg?_nc_cat=108&_nc_oc=AQlHLyrBK1-4qMf4Rn5mU6_efM70mjhiJb6eWYNMjyHMnWc6MnMeSKZpN9P_lQVYsAY&_nc_ht=scontent.fphl2-4.fna&oh=32a925b6681b4e4eab4049d2230565a8&oe=5DCBF21F",
+    "scores":[
+        2,
+        3,
+        4,
+        5,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ]
+  },
+  {
+    "name":"Jess",
+    "photo":"https://app.slack.com/client/THHBG650R/DKXN74BNH/user_profile/UJBGHNGA3",
+    "scores":[
+        5,
+        1,
+        4,
+        2,
+        3,
+        3,
+        2,
+        4,
+        1,
+        5
+      ]
+  },
+  {
+    "name":"Caroline",
+    "photo":"https://scontent.fphl2-4.fna.fbcdn.net/v/t1.0-9/49597637_10214512949565194_4123773215296192512_n.jpg?_nc_cat=110&_nc_oc=AQnMPnlTipGj1jnJ1MjYbJD3x3HuoTa6TQMZ3wBsggDH4dkMLR9-NOigsXN77u0QEgs&_nc_ht=scontent.fphl2-4.fna&oh=7c85258bd3942ca1479682c4dd6b4f8d&oe=5E0BA213",
     "scores":[
         5,
         1,
@@ -15,34 +111,50 @@ var friends = [{
       ]
   },
   {
-    "name":"Mark",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name":"Dan",
+    "photo":"https://media.licdn.com/dms/image/C4E03AQG0LghGkb-UTg/profile-displayphoto-shrink_800_800/0?e=1571875200&v=beta&t=WSoUJ3slkrNxblLK6IDGtvojLXs7d7MUxnMayAD60yU",
     "scores":[
-        5,
         1,
-        4,
-        4,
-        5,
         1,
         2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5
+      ]
+  },
+  {
+    "name":"Nathan",
+    "photo":"https://scontent.fphl2-3.fna.fbcdn.net/v/t1.0-9/66201971_2658578887504548_2590211075894935552_n.jpg?_nc_cat=101&_nc_oc=AQkrDyhkYQsEohn5v6Brpfwe_1MJWU3YaXW6gqgBNAvv19Dua4zeI6i18JKzlsgwjuE&_nc_ht=scontent.fphl2-3.fna&oh=180271a788e3141664d7cce2cae3d8a6&oe=5E128F99",
+    "scores":[
+        5,
         5,
         4,
+        4,
+        3,
+        3,
+        2,
+        2,
+        1,
         1
       ]
   },
   {
-    "name":"Leah",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name":"Mike",
+    "photo":"https://scontent.fphl2-1.fna.fbcdn.net/v/t1.0-9/25594368_10210184247657702_3315349801099901822_n.jpg?_nc_cat=103&_nc_oc=AQlBwEYF5DsXzkwQ64WHtwAedonm59X_cHsuJHL3BcTmrIajDMhHJ-6OM40sNZ6ss2Q&_nc_ht=scontent.fphl2-1.fna&oh=3a487a14e11f1eb69eaea2e3fbf6e489&oe=5DCC3273",
     "scores":[
-        5,
         1,
-        4,
-        4,
-        5,
         1,
-        2,
-        5,
-        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         1
       ]
   }
